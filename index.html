@@ -1,11 +1,670 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="zxx">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+   <meta charset="utf-8">
+   <meta http-equiv="x-ua-compatible" content="ie=edge">
+   <title>StudyOn - Курс</title>
+   <meta name="description" content="">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <!-- Place favicon.ico in the root directory -->
+   <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+
+   <!-- CSS here -->
+   <link rel="stylesheet" href="assets/css/bootstrap.css">
+   <link rel="stylesheet" href="assets/css/meanmenu.css">
+   <link rel="stylesheet" href="assets/css/animate.css">
+   <link rel="stylesheet" href="assets/css/slick.css">
+   <link rel="stylesheet" href="assets/css/backtotop.css">
+   <link rel="stylesheet" href="assets/css/magnific-popup.css">
+   <link rel="stylesheet" href="assets/css/nice-select.css">
+   <link rel="stylesheet" href="assets/css/ui-icon.css">
+   <link rel="stylesheet" href="assets/css/elegentfonts.css">
+   <link rel="stylesheet" href="assets/css/font-awesome-pro.css">
+   <link rel="stylesheet" href="assets/css/spacing.css">
+   <link rel="stylesheet" href="assets/css/style.css">
+
+   <link rel="stylesheet" href="assets/css/video-vjs.css"/>
+   <link rel="stylesheet" href="assets/css/video.css">
+
 </head>
+
 <body>
-    my Html!
+   <!--[if lte IE 9]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+      <![endif]-->
+
+
+   <!-- pre loader area start -->
+   <div id="loading">
+      <div id="loading-center">
+         <div id="loading-center-absolute">
+            <!-- loading content here -->
+         </div>
+      </div>
+   </div>
+   <!-- pre loader area end -->
+
+   <!-- back to top start -->
+   <div class="progress-wrap">
+      <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+         <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+      </svg>
+   </div>
+   <!-- back to top end -->
+
+   <!-- header area start -->
+   <header class="header__transparent">
+      <div class="header__area">
+         <div class="main-header third-header header-xy-spacing" id="header-sticky">
+            <div class="container-fluid">
+               <div class="row align-items-center">
+                  <div class="col-xxl-3 col-xl-3 col-lg-5 col-md-6 col-6">
+                     <div class="logo-area d-flex align-items-center">
+                        <div class="logo">
+                           <a href="index.html">
+                              <img src="assets/img/logo/logo.svg" alt="logo">
+                           </a>
+                        </div>
+                        <div class="header-cat-menu ml-40 d-none d-md-block">
+                           <nav>
+                              <ul>
+                                 <li><a href="course-grid.html"> Каталог <span><i
+                                             class="arrow_carrot-down"></i></span></a>
+                                    <div class="sub-menu d-flex bg-white">
+                                       <ul class="header-sub-menu-ul">
+                                          <li>
+                                             <a href="course-grid.html">
+                                                <img src="assets/img/theme-icon/AttachFileFilled.svg" alt="theme-img">
+                                                <p>
+                                                   Все
+                                                </p>
+                                             </a>
+                                          </li>
+                                          <li>
+                                             <a href="course-grid.html">
+                                                <img src="assets/img/theme-icon/AttachMoneyFilled.svg" alt="theme-img">
+                                                <p>
+                                                   Финансы
+                                                </p>
+                                             </a>
+                                          </li>
+                                          <li>
+                                             <a href="course-grid.html">
+                                                <img src="assets/img/theme-icon/TranslateFilled.svg" alt="theme-img">
+                                                <p>
+                                                   Иностранные языки
+                                                </p>
+                                             </a>
+                                          </li>
+                                          <li>
+                                             <a href="course-grid.html">
+                                                <img src="assets/img/theme-icon/SportsBasketballFilled.svg"
+                                                   alt="theme-img">
+                                                <p>
+                                                   Спорт
+                                                </p>
+                                             </a>
+                                          </li>
+                                          <li>
+                                             <a href="course-grid.html">
+                                                <img src="assets/img/theme-icon/HealthAndSafetyFilled.svg"
+                                                   alt="theme-img">
+                                                <p>
+                                                   Здоровье
+                                                </p>
+                                             </a>
+                                          </li>
+                                          <li>
+                                             <a href="course-grid.html">
+                                                <img src="assets/img/theme-icon/AutoFixHighFilled.svg" alt="theme-img">
+                                                <p>
+                                                   Красота
+                                                </p>
+                                             </a>
+                                          </li>
+                                          <li>
+                                             <a href="course-grid.html">
+                                                <img src="assets/img/theme-icon/AudiotrackFilled.svg" alt="theme-img">
+                                                <p>
+                                                   Творчество
+                                                </p>
+                                             </a>
+                                          </li>
+                                          <li>
+                                             <a href="course-grid.html">
+                                                <img src="assets/img/theme-icon/EmojiEmotionsFilled.svg"
+                                                   alt="theme-img">
+                                                <p>
+                                                   Психология
+                                                </p>
+                                             </a>
+                                          </li>
+                                       </ul>
+                                       <ul class="header-sub-menu-ul">
+                                          <li>
+                                             <a href="course-grid.html">
+                                                <img src="assets/img/theme-icon/AccountBalanceFilled.svg"
+                                                   alt="theme-img">
+                                                <p>Юриспруденция
+                                                </p>
+                                             </a>
+                                          </li>
+                                          <li>
+                                             <a href="course-grid.html">
+                                                <img src="assets/img/theme-icon/AirplanemodeActiveFilled.svg"
+                                                   alt="theme-img">
+                                                <p>Путешествия
+                                                </p>
+                                             </a>
+                                          </li>
+                                          <li>
+                                             <a href="course-grid.html">
+                                                <img src="assets/img/theme-icon/BrushFilled.svg" alt="theme-img">
+                                                <p>Графические дисциплины
+                                                </p>
+                                             </a>
+                                          </li>
+                                          <li>
+                                             <a href="course-grid.html">
+                                                <img src="assets/img/theme-icon/PaletteFilled.svg" alt="theme-img">
+                                                <p>Искусство
+                                                </p>
+                                             </a>
+                                          </li>
+                                          <li>
+                                             <a href="course-grid.html">
+                                                <img src="assets/img/theme-icon/GroupFilled.svg" alt="theme-img">
+                                                <p>Бизнес
+                                                </p>
+                                             </a>
+                                          </li>
+                                          <li>
+                                             <a href="course-grid.html">
+                                                <img src="assets/img/theme-icon/StackedLineChartFilled.svg"
+                                                   alt="theme-img">
+                                                <p>Личностный рост
+                                                </p>
+                                             </a>
+                                          </li>
+                                          <li>
+                                             <a href="course-grid.html">
+                                                <img src="assets/img/theme-icon/MiscellaneousServicesFilled.svg"
+                                                   alt="theme-img">
+                                                <p>IT технологии
+                                                </p>
+                                             </a>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </li>
+                              </ul>
+                           </nav>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xxl-9 col-xl-9 col-lg-7 col-md-6 col-6 d-flex align-items-center justify-content-end">
+                     <div class="main-menu main-menu-black d-flex justify-content-end">
+                        <nav id="mobile-menu">
+                           <ul>
+                              <li class="main-menu-li">
+                                 <a href="index.html#about-project">О проекте</a>
+                              </li>
+                              <li class="main-menu-li">
+                                 <a href="franchise.html">Франшиза</a>
+                              </li>
+                              <li class="only-mobile-nav">
+                                 <a href="course-grid.html">Каталог</a>
+                              </li>
+                           </ul>
+                        </nav>
+                     </div>
+                     <div class="header-right d-flex align-items-center">
+                        <div class="header-meta header-meta-white">
+                           <ul>
+                              <li><a href="sign-in.html" class="d-none d-md-block"><i class="fi fi-rr-user"></i></a>
+                              </li>
+                              <li><a href="#" class="tp-menu-toggle d-xl-none"><i class="icon_ul"></i></a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
+   <!-- header area end -->
+   <div class="tp-sidebar-menu">
+      <button class="sidebar-close"><i class="icon_close"></i></button>
+      <div class="side-logo mb-30">
+         <a href="index.html"><img src="assets/img/logo/logo.svg" alt="logo"></a>
+      </div>
+      <div class="mobile-menu"></div>
+      <div class="sidebar-info">
+         <h4 class="mb-15">Контакты</h4>
+         <ul class="side_circle">
+            <li><a href="tel:79262708425">+7 (926)270-84-25</a></li>
+            <li><a href="mailto:info@studyon.guru">info@studyon.guru</a></li>
+         </ul>
+         <div class="side-social">
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#"><i class="fa-brands fa-telegram"></i></a>
+         </div>
+      </div>
+   </div>
+   <div class="body-overlay"></div>
+
+   <main>
+
+      <!-- breadcrumb-area -->
+      <section class="breadcrumb__area include-bg pt-80 pb-80 breadcrumb__overlay bunner-mt"
+         data-background="assets/img/banner/gorisontal-banner-2.jpg">
+         <div class="container">
+            <div class="row">
+               <div class="col-xxl-12">
+                  <div class="breadcrumb__content p-relative z-index-1">
+                     <h3 class="breadcrumb__title">Деловая разведка и информационные войны в бизнесе</h3>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- breadcrumb-area-end -->
+
+      <!-- course-details-area -->
+      <section class="c-details-area pt-60 pb-50 wow fadeInUp" data-wow-duration=".8s" data-wow-delay=".2s">
+         <div class="container">
+            <div class="c-details-wrapper row pl-10 pr-10">
+               <div class="col-lg-8 col-md-12">
+                  <div class="p-relative">
+                     <div class="p-relative">
+                        <!-- default video player -->
+                        <!-- also can try by the link https://mdbootstrap.com/img/video/animation-intro.mp4 -->
+                        <!-- <video class="c-video-b-rad c-video-back" id="video-player" width="100%" height="auto"
+                           controls preload="metadata" poster="assets/video-example/preview.png">
+                           <source src="assets/video-example/video-example.mp4" type="video/mp4">
+                           <source src="some-resource.webm" type="video/webm">
+                           На данный момент видео не доступно
+                        </video> -->
+                        <!-- video player vjs -->
+                        <video id="video-player-cors" class="video-js vjs-theme-red video-container" controls
+                           preload="metadata" poster="assets/img/video-player/preview.png" data-setup="{}">
+                           <source src="assets/video-example/video-example.mp4" type="video/mp4" />
+                           <source src="MY_VIDEO.webm" type="video/webm" />
+                           <p class="vjs-no-js">
+                              To view this video please enable JavaScript, and consider upgrading to a
+                              web browser that
+                              <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5
+                                 video</a>
+                           </p>
+                        </video>
+                     </div>
+                  </div>
+                  <div class="course-details-content mb-45 mt-10">
+                     <div class="tpcourse__category mb-15">
+                        <ul class="tpcourse__price-list d-flex align-items-center">
+                           <li class="c-color-red course-filter-theme">
+                              Иностранные языки
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="tpcourse__ava-title mb-25">
+                        <h4 class="c-details-title">Деловая разведка и информационные войны в бизнесе</h4>
+                     </div>
+                  </div>
+                  <div class="c-details-about mb-40">
+                     <h5 class="tp-c-details-title mb-20">О курсе</h5>
+                     <p>
+                        Интернет открыл для нас много возможностей, но, с другой стороны, «вседоступность»
+                        поставила
+                        под удар информационную безопасность. Как защитить свои персональные данные? Как вычислить
+                        мошенника или проверить сотрудника? Можно ли узнать, насколько честен ваш деловой партнер?
+                     </p>
+                     <p>
+                        Найти ответы на эти вопросы вы сможете, посмотрев курс «Деловая разведка и информационные
+                        войны
+                        в бизнесе». Игорь Бедеров расскажет, как законно и доступно проверить данные о физических
+                        и
+                        юридических лицах. Из этого курса вы узнаете, какие ресурсы использовать для успешного
+                        поиска
+                        в интернете.
+                     </p>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-12 mb-40">
+                  <div class="c-details-sidebar">
+                     <div class="course-details-widget mt-10">
+                        <div class="cd-video-price">
+                           <div class="cd-pricing-btn text-center mb-30">
+                              <a href="register.html"><button class="tp-btn w-100">Купить 6000.00 &nbsp;&#8381;</button></a>
+                           </div>
+                        </div>
+                        <div class="cd-information mb-35">
+                           <ul>
+                              <!-- lesson list item start -->
+                              <li class="d-flex">
+                                 <i class="fa-light fa-calendars"></i>
+                                 <div class="flex-spread-1">
+                                    <div class="lessons-list-title">
+                                       Превью
+                                    </div>
+                                    <div class="lessons-list-subtitle">
+                                       Вводное видео
+                                    </div>
+                                 </div>
+                                 <span>00:50</span>
+                              </li>
+                              <!-- lesson list item end -->
+
+                              <li class="d-flex">
+                                 <i class="fa-light fa-calendars"></i>
+                                 <div class="flex-spread-1">
+                                    <div class="lessons-list-title">
+                                       <a>
+                                          Урок 1
+                                       </a>
+                                    </div>
+                                    <div class="lessons-list-subtitle">
+                                       Информационные войны и управление деловой репутацией в интернете: история
+                                    </div>
+                                 </div>
+                                 <span>00:50</span>
+                              </li>
+
+                              <li class="d-flex">
+                                 <i class="fa-light fa-calendars"></i>
+                                 <div class="flex-spread-1">
+                                    <div class="lessons-list-title">
+                                       Урок 2
+                                    </div>
+                                    <div class="lessons-list-subtitle">
+                                       Информационные войны
+                                    </div>
+                                 </div>
+                                 <span>00:50</span>
+                              </li>
+
+                              <li class="d-flex">
+                                 <i class="fa-light fa-calendars"></i>
+                                 <div class="flex-spread-1">
+                                    <div class="lessons-list-title">
+                                       Урок 1
+                                    </div>
+                                    <div class="lessons-list-subtitle">
+                                       Информационные войны и управление деловой
+                                    </div>
+                                 </div>
+                                 <span>00:50</span>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- course-details-area-end -->
+
+      <!-- course-area -->
+      <section class="course-area mb-80">
+         <div class="container">
+            <div class="row pl-10 pr-10">
+               <div class="col-md-12">
+                  <div class="section-title mb-65">
+                     <h2 class="tp-section-title mb-20">Вам могут понравиться</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row pl-10 pr-10">
+
+               <!-- course card start -->
+               <div class="col-xl-4 col-lg-6 col-md-6 mb-20">
+                  <div class="tpcourse full-height d-flex course-flex wow fadeInUp" data-wow-duration=".8s"
+                     data-wow-delay=".2s">
+                     <div class="tpcourse__thumb p-relative w-img fix">
+                        <a href="course-details.html">
+                           <img src="assets/img/course/card1.png" alt="course-thumb">
+                        </a>
+                        <div class="tpcourse__tag">
+                           <a href="course-details.html"><i class="fi fi-rr-heart"></i></a>
+                        </div>
+                     </div>
+                     <div class="tpcourse__content-2 flex-spread-1 d-flex f-column">
+                        <div class="tpcourse__category mb-10">
+                           <ul class="tpcourse__price-list d-flex align-items-center">
+                              <li><a class="c-color-red" href="course-grid.html">Графические дисциплины</a></li>
+                           </ul>
+                        </div>
+                        <div class="tpcourse__ava-title mb-15 flex-spread-1">
+                           <h4 class="tpcourse__title tp-cours-title-color tp-course-cut-title">
+                              <a href="course-details.html">
+                                 Деловая разведка wewwe ewewfwe efwefw ewfewf ewfewfw wefewf
+                              </a>
+                           </h4>
+                        </div>
+                        <div class="tpcourse__meta tpcourse__meta-gap pb-15 mb-15 b-border">
+                           <ul class="d-flex align-items-center">
+                              <li><img src="assets/img/icon/c-meta-01.png" alt="meta-icon"> <span>35
+                                    Уроков</span></li>
+                              <li>
+                                 <a href="instructor-profile.html">
+                                    <img src="assets/img/icon/c-meta-02.png" alt="meta-icon">
+                                    <span>
+                                       Эрик Спеллман (Eric Spellmann, США)
+                                    </span>
+                                 </a>
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="tpcourse__rating d-flex align-items-center justify-content-between">
+                           <div class="tpcourse__pricing">
+                              <h5 class="price-title">6000.00 &nbsp;&#8381;</h5>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- course card end -->
+
+               <div class="col-xl-4 col-lg-6 col-md-6 mb-20">
+                  <div class="tpcourse full-height d-flex course-flex wow fadeInUp" data-wow-duration=".8s"
+                     data-wow-delay=".2s">
+                     <div class="tpcourse__thumb p-relative w-img fix">
+                        <a href="course-details.html">
+                           <img src="assets/img/course/card1.png" alt="course-thumb">
+                        </a>
+                        <div class="tpcourse__tag">
+                           <a href="course-details.html"><i class="fi fi-rr-heart"></i></a>
+                        </div>
+                     </div>
+                     <div class="tpcourse__content-2 flex-spread-1 d-flex f-column">
+                        <div class="tpcourse__category mb-10">
+                           <ul class="tpcourse__price-list d-flex align-items-center">
+                              <li><a class="c-color-red" href="course-grid.html">Графические дисциплины</a></li>
+                           </ul>
+                        </div>
+                        <div class="tpcourse__ava-title mb-15 flex-spread-1">
+                           <h4 class="tpcourse__title tp-cours-title-color tp-course-cut-title">
+                              <a href="course-details.html">
+                                 Деловая разведка wewwe ewewfwe efwefw ewfewf ewfewfw wefewf
+                              </a>
+                           </h4>
+                        </div>
+                        <div class="tpcourse__meta tpcourse__meta-gap pb-15 mb-15 b-border">
+                           <ul class="d-flex align-items-center">
+                              <li><img src="assets/img/icon/c-meta-01.png" alt="meta-icon"> <span>35
+                                    Уроков</span></li>
+                              <li>
+                                 <a href="instructor-profile.html">
+                                    <img src="assets/img/icon/c-meta-02.png" alt="meta-icon">
+                                    <span>
+                                       Эрик Спеллман (Eric Spellmann, США)
+                                    </span>
+                                 </a>
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="tpcourse__rating d-flex align-items-center justify-content-between">
+                           <div class="tpcourse__pricing">
+                              <h5 class="price-title">6000.00 &nbsp;&#8381;</h5>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col-xl-4 col-lg-6 col-md-6 mb-20">
+                  <div class="tpcourse full-height d-flex course-flex wow fadeInUp" data-wow-duration=".8s"
+                     data-wow-delay=".2s">
+                     <div class="tpcourse__thumb p-relative w-img fix">
+                        <a href="course-details.html">
+                           <img src="assets/img/course/card1.png" alt="course-thumb">
+                        </a>
+                        <div class="tpcourse__tag">
+                           <a href="course-details.html"><i class="fi fi-rr-heart"></i></a>
+                        </div>
+                     </div>
+                     <div class="tpcourse__content-2 flex-spread-1 d-flex f-column">
+                        <div class="tpcourse__category mb-10">
+                           <ul class="tpcourse__price-list d-flex align-items-center">
+                              <li><a class="c-color-red" href="course-grid.html">Графические дисциплины</a></li>
+                           </ul>
+                        </div>
+                        <div class="tpcourse__ava-title mb-15 flex-spread-1">
+                           <h4 class="tpcourse__title tp-cours-title-color tp-course-cut-title">
+                              <a href="course-details.html">
+                                 Деловая разведка wewwe ewewfwe efwefw ewfewf ewfewfw wefewf
+                              </a>
+                           </h4>
+                        </div>
+                        <div class="tpcourse__meta tpcourse__meta-gap pb-15 mb-15 b-border">
+                           <ul class="d-flex align-items-center">
+                              <li><img src="assets/img/icon/c-meta-01.png" alt="meta-icon"> <span>35
+                                    Уроков</span></li>
+                              <li>
+                                 <a href="instructor-profile.html">
+                                    <img src="assets/img/icon/c-meta-02.png" alt="meta-icon">
+                                    <span>
+                                       Эрик Спеллман (Eric Spellmann, США)
+                                    </span>
+                                 </a>
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="tpcourse__rating d-flex align-items-center justify-content-between">
+                           <div class="tpcourse__pricing">
+                              <h5 class="price-title">6000.00 &nbsp;&#8381;</h5>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </section>
+      <!-- course-area-end -->
+
+   </main>
+
+   <!-- footer-area -->
+   <footer>
+      <div class="footer-bg theme-bg-third bg-bottom" data-background="assets/img/bg/shape-bg-02.png">
+         <div class="f-border pt-115 pb-70">
+            <div class="container">
+               <div class="row">
+                  <div class="col-xl-6">
+                     <div class="footer-widget mb-50">
+                        <div class="footer-widget__text mb-35">
+                           <h3 class="footer-widget__title">О нас</h3>
+                        </div>
+                        <div class="footer-widget__link">
+                           <ul>
+                              <li><a href="about-company.html">О проекте</a></li>
+                              <li><a href="offer.html">Публичная оферта</a></li>
+                              <li><a href="franchise.html">Франшиза</a></li>
+                              <li><a href="payment-description.html">Оплата</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-6">
+                     <div class="footer-widget mb-50">
+                        <div class="footer-widget__text mb-35">
+                           <h3 class="footer-widget__title">Свяжитесь с нами</h3>
+                        </div>
+                        <div class="footer-widget__link">
+                           <ul>
+                              <li><a href="tel:+79262708425">+7 (926)270-84-25 </a></li>
+                              <li><a href="mailto:info@studyon.guru">info@studyon.guru</a></li>
+                              <li><a href="contact.html">Контакты</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+         </div>
+         <div class="f-copyright pt-60 pb-40">
+            <div class="container">
+               <div class="row text-center text-lg-start">
+                  <div class="col-xl-6 col-lg-6">
+                     <div class="f-copyright__logo mb-30">
+                        <a href="index.html"><img src="assets/img/logo/logo-light.svg" alt="logo"></a>
+                     </div>
+                  </div>
+                  <!-- social media start -->
+                  <div class="col-xl-6 col-lg-6">
+                     <div class="f-copyright__social-area mb-20 text-lg-end">
+                        <!-- fa-youtube - is icon. If you need another one - try to find it by social media name in font-awesome-pro.css-->
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                     </div>
+                     <div class="text-lg-end footer-pay-system-wrap">
+                        <i class="mb-2 footer-icon"><img src="assets/img/pay-systems/apple-pay.svg" alt="apple pay" /></i>
+                        <i class="mb-2 footer-icon"><img src="assets/img/pay-systems/mastercard.svg" alt="mastercard" /></i>
+                        <i class="mb-2 footer-icon"><img src="assets/img/pay-systems/mir.svg" alt="mir" /></i>
+                        <i class="mb-2 footer-icon"><img src="assets/img/pay-systems/samsung-pay.svg" alt="samsung pay" /></i>
+                        <i class="mb-2 footer-icon"><img src="assets/img/pay-systems/visa.svg" alt="visa" /></i>
+                        <i class="mb-2 footer-icon"><img src="assets/img/pay-systems/wallet-one.svg" alt="wallet one" /></i>
+                     </div>
+                  </div>
+                  <!-- social media end -->
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <!-- footer-area-end -->
+
+
+
+
+   <!-- JS here -->
+   <script src="assets/js/vendor/jquery.js"></script>
+   <script src="assets/js/vendor/waypoints.js"></script>
+   <script src="assets/js/bootstrap-bundle.js"></script>
+   <script src="assets/js/meanmenu.js"></script>
+   <script src="assets/js/slick.js"></script>
+   <script src="assets/js/magnific-popup.js"></script>
+   <script src="assets/js/parallax.js"></script>
+   <script src="assets/js/backtotop.js"></script>
+   <script src="assets/js/nice-select.js"></script>
+   <script src="assets/js/counterup.js"></script>
+   <script src="assets/js/wow.js"></script>
+   <script src="assets/js/isotope-pkgd.js"></script>
+   <script src="assets/js/imagesloaded-pkgd.js"></script>
+   <script src="assets/js/ajax-form.js"></script>
+   <script src="assets/js/main.js"></script>
+   <script src="assets/js/vjs.min.js"></script>
+   <script src="assets/js/video.js"></script>
+
 </body>
+
 </html>

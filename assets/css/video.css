@@ -1,0 +1,85 @@
+:root {
+    --tp-common-white: #ffffff;
+    --tp-common-black: #3F120C;
+    --tp-heading-primary: #100F3D;
+    --tp-heading-secondary: #DE5256;
+    --tp-heading-b-light: #050D36;
+    --tp-grey-1: #F8FAFA;
+    --tp-grey-2: #F5F6F8;
+    --tp-text-body: #000;
+    --tp-text-1: #312424;
+    --tp-text-2: #777C90;
+    --tp-theme-1: #DE5256;
+    --tp-theme-2: #F7F8F9;
+    --tp-theme-3: #434041;
+    --tp-border-1: #fff;
+    --tp-border-2: #D2151B;
+}
+/* styles for base html video */
+.c-video-b-rad {
+    border-radius: 10px;
+}
+
+/* .video-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../video-example/preview-bg.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 10px;
+  } */
+
+/* styles for vjs */
+.vjs-theme-red {
+    background: transparent;
+}
+.vjs-theme-red.video-js {
+    color: var(--tp-heading-secondary);
+    width: 100%;
+    height: 480px;
+    border-radius: 10px;
+    background-image: url(../img/video-player/preview-bg.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+@media (max-width: 576px) {
+    .vjs-theme-red.video-js {
+        height: 200px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .vjs-theme-red.video-js {
+        height: 300px;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 992px) {
+    .vjs-theme-red.video-js {
+        height: 380px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .vjs-theme-red.video-js {
+        height: 320px;
+    }
+}
+
+.vjs-theme-red .vjs-big-play-button {
+    border: none;
+}
+
+.vjs-theme-red .vjs-volume-level,
+.vjs-theme-red .vjs-play-progress,
+.vjs-theme-red .vjs-slider-bar {
+    background: var(--tp-theme-2);
+}
+.vjs-theme-red .vjs-control-bar{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
