@@ -411,6 +411,9 @@ img {
     width: 100px;
 }
 
+.bg-img {
+    background-image: url('../img/banner/gorisontal-banner-2.jpg');
+}
 /*----------------------------------------
     Body Overlay
 -----------------------------------------*/
